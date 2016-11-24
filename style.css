@@ -1,8 +1,10 @@
-body{
+body {
     background-color: #bbd4f0;
 }
 
-h1, h2, h3{
-    color: #ff0000;
+h1,
+h2,
+h3 {
+    color: #a37a28;
     text-align: center;
 }
