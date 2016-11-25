@@ -9,10 +9,10 @@ h3 {
 .center {
     text-align: center;
 }
-a {
+a, a:visited {
     color: #95a5a6;
 }
-a:hover {
+a:hover{
     color: #fff;
 }
 .header{
