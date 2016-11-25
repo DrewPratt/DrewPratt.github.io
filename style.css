@@ -11,12 +11,15 @@ h3 {
 }
 a {
     color: #95a5a6;
+    transition: color .5s ease;
 }
 a:visited {
     color: #95a5a6;
 }
 a:hover{
     color: #fff;
+
+
 }
 .header{
   background-color: #ecf0f1;
@@ -29,7 +32,9 @@ a:hover{
 }
 .fa{
   color: #95a5a6;
+  transition: transform 1s ease;
 }
 .fa:hover{
-  color: #fff;
+  color: #666;
+  transform: rotate(360deg);
 }
