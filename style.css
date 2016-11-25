@@ -1,13 +1,32 @@
 body {
-    background-color: #bbd4f0;
+    background-color: #34495e;
 }
-
 h1,
 h2,
 h3 {
-    color: #3f4e5b;
+    color: #95a5a6;
 }
-
 .center {
     text-align: center;
+}
+a {
+    color: #95a5a6;
+}
+a:hover {
+    color: #fff;
+}
+.header{
+  background-color: #ecf0f1;
+  height: auto;
+  margin: -20px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+}
+.lowerAnchorIcon{
+  margin-top: 20px;
+}
+.fa{
+  color: #95a5a6;
+}
+.fa:hover{
+  color: #fff;
 }
