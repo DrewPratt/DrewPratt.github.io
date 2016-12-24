@@ -1,41 +1,92 @@
+/*Variables*/
+
+:root{
+  --color1: #022b42;  /*  var(--color1);  Dark blue */
+  --color2: #457ea4;  /*  var(--color2);  Medium blue */
+  --color3: #b3defb;  /*  var(--color3);  Light blue*/
+  --color4: #f2e3ca;  /*  var(--color4);  Beige*/
+  --color5: #c05c38;  /*  var(--color5);  Red-orange*/
+}
+
+/*page elements*/
+
 body {
-    background-color: #34495e;
+    background-color: var(--color2);
 }
-h1,
-h2,
-h3 {
-    color: #95a5a6;
+h1{
+    color: var(--color2);
+    margin: 20px, auto;
+    transition: color .5s ease;
 }
-.center {
-    text-align: center;
+h2{
+  color: var(--color3);
+  margin-left: 25px;
 }
 a {
-    color: #95a5a6;
+    color: var(--color1);
     transition: all .5s ease;
 }
 a:visited {
-    color: #95a5a6;
+    color: var(--color1);
 }
 a:hover{
-    color: #fff;
+    color: var(--color3);
     font-size: 2.5rem;
-
-
 }
+
+/*classes*/
+
 .header{
-  background-color: #ecf0f1;
+  background-color: var(--color3);
   height: auto;
   margin: -20px 0px 0px 0px;
   padding: 10px 0px 10px 0px;
+  box-shadow: 0px 0px 0px;
+  transition: box-shadow .5s ease;
+}
+.header:hover{
+  box-shadow: 10px 5px 15px var(--color1);
+}
+.header:hover h1{
+  color: var(--color5);
+}
+.header:hover .fa{
+  transform: rotate(360deg);
 }
 .lowerAnchorIcon{
   margin-top: 20px;
 }
+.center {
+    text-align: center;
+}
+.marge{
+  margin-left: 75px;
+}
+.marge .fa{
+  color: var(--color1);
+  transition: all .5s ease;
+}
+.marge h3:hover .fa{
+  color: var(--color3);
+  font-size: 2.5rem;
+  transform: rotate(180deg);
+}
+
+.marge a::before{
+  content: "F.C.C. ";
+}
+
 .fa{
-  color: #95a5a6;
+  color: var(--color2);
   transition: all 1.5s ease;
 }
-.fa:hover{
-  color: #666;
+/*.fa:hover{
   transform: rotate(360deg);
+}*/
+.fRight{
+  float: right;
+  margin-right: 25px;
+}
+.fLeft{
+  float: left;
 }
