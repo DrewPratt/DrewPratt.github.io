@@ -1,92 +1,123 @@
 /*Variables*/
 
-:root{
-  --color1: #022b42;  /*  var(--color1);  Dark blue */
-  --color2: #457ea4;  /*  var(--color2);  Medium blue */
-  --color3: #b3defb;  /*  var(--color3);  Light blue*/
-  --color4: #f2e3ca;  /*  var(--color4);  Beige*/
-  --color5: #c05c38;  /*  var(--color5);  Red-orange*/
+:root {
+	--color1: #000000;
+	/*  var(--color1);  black */
+	--color2: #ecf0f5;
+	/*  var(--color2);  Light blue */
+	--color3: #317db1;
+	/*  var(--color3);  Medium blue*/
+	--color4: #ffffff;
+	/*  var(--color4);  White */
+	--color5: #e26c38;
+	/*  var(--color5);  Red-orange*/
 }
+
 
 /*page elements*/
 
 body {
-    background-color: var(--color2);
+	background-color: var(--color2);
 }
-h1{
-    color: var(--color2);
-    margin: 20px, auto;
-    transition: color .5s ease;
+
+h2 {
+	/*color: var(--color3);*/
+	margin-left: 25px;
 }
-h2{
-  color: var(--color3);
-  margin-left: 25px;
-}
+
 a {
-    color: var(--color1);
-    transition: all .5s ease;
+	color: var(--color1);
+	transition: all .5s ease;
 }
+
 a:visited {
-    color: var(--color1);
+	color: var(--color1);
 }
-a:hover{
-    color: var(--color3);
-    font-size: 2.5rem;
+
+a:hover {
+	color: var(--color3);
 }
+
 
 /*classes*/
 
-.header{
-  background-color: var(--color3);
-  height: auto;
-  margin: -20px 0px 0px 0px;
-  padding: 10px 0px 10px 0px;
-  box-shadow: 0px 0px 0px;
-  transition: box-shadow .5s ease;
+.header {
+	background-color: var(--color3);
+	height: auto;
+	margin: -20px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	box-shadow: 0px 0px 0px;
+	transition: box-shadow .5s ease;
 }
-.header:hover{
-  box-shadow: 10px 5px 15px var(--color1);
+
+.header:hover {
+	box-shadow: 10px 5px 15px var(--color1);
 }
-.header:hover h1{
-  color: var(--color5);
+
+.header h1 {
+	color: var(--color4);
+	margin: 20px, auto;
+	transition: all .5s ease-in-out;
 }
-.header:hover .fa{
-  transform: rotate(360deg);
+
+.header:hover h1 {
+	transform: translate3d(0px, 3px, 0px);
 }
-.lowerAnchorIcon{
-  margin-top: 20px;
+
+.header:hover .fa {
+	transform: rotate(180deg);
 }
+
+.lowerAnchorIcon {
+	margin-top: 20px;
+}
+
 .center {
-    text-align: center;
-}
-.marge{
-  margin-left: 75px;
-}
-.marge .fa{
-  color: var(--color1);
-  transition: all .5s ease;
-}
-.marge h3:hover .fa{
-  color: var(--color3);
-  font-size: 2.5rem;
-  transform: rotate(180deg);
+	text-align: center;
 }
 
-.marge a::before{
-  content: "F.C.C. ";
+.about {
+	margin-left: 25px;
 }
 
-.fa{
-  color: var(--color2);
-  transition: all 1.5s ease;
+.about p {
+	margin-left: 10px;
 }
+
+.marge {
+	margin-left: 75px;
+}
+
+.marge .fa {
+	color: var(--color1);
+	transition: all .5s ease;
+}
+
+.marge h3:hover .fa {
+	color: var(--color3);
+	font-size: 2.5rem;
+	transform: rotate(90deg);
+}
+
+.marge a::before {
+	content: "F.C.C. ";
+}
+
+.fa {
+	color: var(--color2);
+	transition: all 1.5s ease;
+}
+
+
 /*.fa:hover{
   transform: rotate(360deg);
 }*/
-.fRight{
-  float: right;
-  margin-right: 25px;
+
+.fRight {
+	float: right;
+	margin-right: 25px;
 }
-.fLeft{
-  float: left;
+
+.fLeft {
+	float: left;
 }
