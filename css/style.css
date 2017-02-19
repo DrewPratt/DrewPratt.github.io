@@ -133,9 +133,11 @@ footer p .fa:hover {
 
 
 /*classes*/
-.article{
+
+.article {
 	width: 40%;
 }
+
 .lowerAnchorIcon {
 	margin-top: 20px;
 }
@@ -179,10 +181,6 @@ footer p .fa:hover {
 	content: "F.C.C. ";
 }
 
-.marge a#unFcc::before {
-	content: "";
-}
-
 .fa {
 	color: var(--color2);
 }
@@ -221,6 +219,10 @@ footer p .fa:hover {
 #psc {
 	margin-bottom: 100px;
 	padding-bottom: 0px;
+}
+
+.marge a.unFcc::before {
+	content: "";
 }
 
 
