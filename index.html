@@ -1,35 +1,21 @@
 <!doctype html>
 <html>
-<!--todo [x] Test 1: should have welcome section with id of "welcome-section"-->
-<!--todo [x] Test 2: welcome section should have an H1 that contains text-->
-<!--todo [x] Test 3: projects section with id of "projects"-->
-<!--todo [x] Test 4: projects section should have one element with class of "project-tile"-->
-<!--todo [x] Test 5: the project section should link to at least one project-->
-<!--todo [x] Test 6: should have a navbar with id of "navbar" -->
-<!--todo [x] test 7: should contain at least one link I can click to navigate to a different sections of the page-->
-<!--todo [x] Test 8: my portfolio should have a link with an id of "profile-link" which opens my github or FCC profile in a new tab-->
-<!--todo [x] Test 9: should have at least one media query-->
-<!--todo [x] Test 10: the height of the welcome section should be the height of the viewport-->
-<!--todo [x] Test 11: the navbar should always be at the top of the viewport-->
-<!--fixme [x] really dive in and do a mobile first version-->
 
 <head>
 	<title>Drew Pratt</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" href="css/reset.css" rel="stylesheet">
-	<!--	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<!--	<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">-->
 	<link type='text/css' href='css/style.css' rel='stylesheet'>
 	<!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script> -->
-	<!--note nav test wont pass with scroller.js active-->
+	<!--note FFC nav test (#7) wont pass with scroller.js active-->
 </head>
 
 <body id="main">
 	<nav id="navbar">
-		<!-- note [x] sticky header-->
 		<ul>
 			<li class="navElement">Drew Pratt</li>
-			<!-- todo [x] add home button-->
 			<li class="navElement"><a href="#welcome-section">Home</a></li>
 			<li class="navElement"><a href="#about">About</a></li>
 			<li class="navElement"><a href="#projects">Projects</a></li>
@@ -44,17 +30,13 @@
 		<section class="about" id="about">
 			<img src="img/ProfilePic.030617.png" alt="" height="" width="150">
 			<p>
-				<!-- fixme [x] move to the left, adjust font size if needed -->
+				<!--fixme [] change to individual paragraphs instead of using line breaks-->
 				I'm an occasional graphic artist, regular musician, and beginning web developer.<br> I grew up in Nothern California and relocated to Seattle in 2014.<br> I've always had an interest in learning to code, but never fully commited until now. <br>I'm looking forward to my continuing journey to build a career in code!
 			</p>
-			<!-- fixme [x] change profile pic to one from sketch-->
-			<!-- fixme [x] add border color -->
 		</section>
 		<section class="projects" id="projects">
 			<h1>Projects:</h1>
 			<div class="project">
-				<!-- fixme [x] columns look horrible and are spaced wierd-->
-				<!-- fixme [x] tiles need to be responsively centered-->
 				<div class="project-tile">
 					<a href="https://drewpratt.github.io/Projects/PSC/"><img src="img/PscSmallest.png" alt="" height="" width="">
 						<p class="projectDescription">Playback Speed Calculator</p>
@@ -95,14 +77,12 @@
 		<section class="contact" id="contact">
 			<div>
 				<h2>Contact:</h2>
-				<!--todo [x] add font awesome social media and links refer to sketch-->
 				<!-- Fixme  style contact links better A-la sketch-->
 				<p><a href="https://www.twitter.com/d_pparker" target="_blank"><span class="fa fa-twitter"></span>Twitter</a></p>
 				<p><a id="profile-link" href="https://github.com/drewpratt" target="_blank"><span class="fa fa-github"></span>Github</a></p>
 			</div>
 		</section>
 	</main>
-	<!-- note [x] - project tiles should have black BKG and img == .5 opacity >> on hover 1.0 opacity-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scroller.js"></script>
 </body>
