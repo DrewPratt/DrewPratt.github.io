@@ -1,233 +1,261 @@
-/*Variables*/
-
-:root {
-	--color1: #000000;
-	/*  var(--color1);  black */
-	--color2: #ecf0f5;
-	/*  var(--color2);  Light blue */
-	--color3: #317db1;
-	/*  var(--color3);  Medium blue*/
-	--color4: #ffffff;
-	/*  var(--color4);  White */
-	--color5: #d83b00;
-	/*  var(--color5);  base orange(accent)*/
-	--color6: #121634;
-	/* var(--color6);   Darkest blue*/
-}
+/*__________default/mobile styles____________________________*/
 
 
-/*page elements*/
+/*fixme [x] Move from IDs to classes wherever possible___________________*/
+
+
+/*todo [] actually choose fonts instead of using defaults___________*/
 
 body {
-	background-color: var(--color2);
-}
-
-H1 {
-	color: var(--color6);
-}
-
-h2 {
-	color: var(--color6);
-	margin-left: 25px;
-}
-
-p {
-	color: var(--color6);
+	font-size: 1em;
+	color: black;
+	background-color: lightgray;
 }
 
 a {
-	color: var(--color6);
-	transition: all .5s ease;
-}
-
-a:visited {
-	color: var(--color6);
+	color: black;
+	text-decoration: none;
 }
 
 a:hover {
-	color: var(--color3);
+	color: grey;
 }
 
-header {
-	background-color: var(--color3);
-	height: auto;
+#navbar {
+	background-color: rgba(62, 85, 106, 0.5);
 	position: fixed;
-	z-index: 1;
 	width: 100%;
 	top: 0px;
-	margin-top: -20px;
-	margin-bottom: 200px;
-	padding: 10px 0px 10px 0px;
-	box-shadow: 0px 0px 0px;
-	transition: box-shadow .5s ease;
+	/*	border-bottom: 4px solid #4B8F9F;*/
+	z-index: 99;
 }
 
-header:hover {
-	box-shadow: 10px 5px 15px var(--color6);
-	transition: all .5s ease;
+nav ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-header h1 {
-	color: var(--color4);
-	margin: 20px, auto;
-	transition: all .5s ease-in-out;
+nav li {
+	flex: 0 0 auto;
 }
 
-header:hover h1 {
-	transform: translate3d(0px, 3px, 0px);
+.navElement {
+	font-size: 1em;
+	margin-bottom: .5rem;
 }
 
-header .fa {
-	transition: transform .5s ease;
-}
-
-header:hover .fa {
-	transform: rotate(90deg);
-}
-
-nav {
-	margin-top: 25px;
-}
-
-nav a {
-	margin-left: 25px;
-}
-
-#nav1 a {
-	color: var(--color4);
-}
-
-main {
-	margin-top: 150px;
-	margin-bottom: 200px;
-	/*	background-color: var(--color3);*/
-}
-
-footer {
-	position: fixed;
-	bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	background-color: var(--color3);
-	text-align: center;
-	box-shadow: 0px -5px 10px -5px var(--color1);
-}
-
-footer p {
-	font-size: 2rem;
-	color: var(--color6);
-}
-
-footer p .fa {
-	color: var(--color6);
-	margin-left: 25px;
-	text-align: center;
-	margin-top: 10px;
-}
-
-footer p .fa:hover {
-	color: var(--color2);
+nav li:first-child {
+	font-size: 2em;
 }
 
 
-/*classes*/
+/*________________welcome section___________________________*/
 
-.article {
-	width: 40%;
+.welcome {
+	/* note keep this height for FCC tests */
+	height: 100vh;
+	width: 100%;
+	background-image: url("../img/SeattleSkylineMobile.png");
+	background-size: cover;
 }
 
-.lowerAnchorIcon {
-	margin-top: 20px;
+.welcome h1 {
+	position: relative;
+	display: inline;
+	font-size: 4em;
+	top: 400px;
+	left: 50px;
+	color: white;
 }
 
-.center {
-	text-align: center;
+.welcome p {
+	position: relative;
+	display: inline;
+	top: 390px;
+	left: 50px;
+	font-size: 1em;
+	color: white;
 }
+
+
+/*_________________________about section_________________*/
 
 .about {
-	padding: 0px;
-	padding-top: 100px;
-	margin: 0px auto;
-	margin-left: 25px;
-	top: 0px;
+	height: 100vh;
+	width: 100%;
+	clear: both;
+}
+
+.about img {
+	display: block;
+	border-radius: 50%;
+	border: 10px solid #4B8F9F;
+	margin-top: 5vh;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .about p {
-	margin-left: 75px;
-	font-size: 2.5rem;
-	font-family: 'Gentium Book Basic', serif;
-	color: var(--color6);
-}
-
-.marge {
-	margin-left: 75px;
-	padding-bottom: 100px;
-}
-
-.marge .fa {
-	color: var(--color6);
-	transition: all .5s ease;
-}
-
-.marge h3:hover .fa {
-	color: var(--color3);
-	font-size: 2.5rem;
-	transform: rotate(90deg);
-}
-
-.marge a::before {
-	content: "F.C.C. ";
-}
-
-.fa {
-	color: var(--color2);
-}
-
-.bioImage {
-	vertical-align: middle;
-	border-color: var(--color-primary-3);
-	border-style: solid;
-	border-radius: 50%;
-	border-width: 4px;
-	max-width: 250px;
-	margin-top: -75px;
-}
-
-
-/*.fa:hover{
-  transform: rotate(360deg);
-}*/
-
-.fRight {
+	font-size: 1em;
 	float: right;
+	line-height: 1.5rem;
+	margin-top: 25px;
+	text-align: center;
+}
+
+
+/*________________________projects section_____________*/
+
+.projects {
+	padding-top: 80px;
+	width: 100%;
+}
+
+.projects h1 {
+	font-size: 3rem;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+.project {
+	/* project container */
+	column-count: 1;
+	column-rule: solid 2px darkgray;
+	column-gap: 0em;
+	text-align: center;
+}
+
+.project-tile {
+	/* project child elements */
+	position: relative;
+	background-color: #000;
+	display: inline-block;
+	margin-bottom: 50px;
+	margin-bottom: 50px;
+	height: 240px;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+.project-tile img {
+	border-radius: 10px;
+}
+
+.projectDescription {
+	line-height: 1.5em;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+/*__________________-contact section____________________________*/
+
+.contact {
+	position: relative;
+	background-image: url("../img/PikePlaceMobileBlur.png");
+	background-size: cover;
+	height: 700px;
+	width: 100%;
+	margin-top: 100px;
+	padding-top: 80px;
+}
+
+.contact h2 {
+	text-align: center;
+	font-size: 3em;
+	margin-top: 150px;
+	color: white;
+}
+
+.contact p {
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	margin-top: 50px;
+}
+
+.contact a {
+	color: lightgray;
+}
+
+.contact a:hover {
+	color: white;
+}
+
+.contact span {
+	/* font awesome icons go in this span*/
 	margin-right: 25px;
 }
 
-.fLeft {
-	float: left;
+@media only screen and (min-width: 960px) {
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	nav li:nth-child(1) {
+		margin-right: auto;
+	}
+	.navElement {
+		font-size: 2em;
+		margin-left: 50px;
+	}
+	.navElement:last-child {
+		margin-right: 50px;
+	}
+	nav li:first-child {
+		font-size: 5em;
+	}
+	.welcome {
+		/* note keep this height for FCC tests */
+		height: 100vh;
+		background-image: url("../img/SeattleSkylineSmall.png");
+		background-size: cover;
+	}
+	.welcome h1 {
+		font-size: 10em;
+		left: 100px;
+	}
+	.welcome p {
+		display: inline;
+		top: 420px;
+		left: 100px;
+		font-size: 2em;
+	}
+	.about img {
+		display: inline;
+		margin-top: 30vh;
+		margin-left: 50px;
+		width: 225px;
+	}
+	.about p {
+		font-size: 2em;
+		line-height: 2rem;
+		text-align: left;
+		margin-top: 37vh;
+	}
+	.projects h1 {
+		font-size: 5rem;
+	}
+	.project {
+		/* project container */
+		column-count: 3;
+	}
+	.project-tile img {
+		opacity: .7;
+		transition: opacity .5s ease;
+	}
+	.project-tile img:hover {
+		opacity: 1;
+	}
+	.contact {
+		background-image: url("../img/PikePlaceSmallBlur.png");
+	}
+	.contact h2 {
+		font-size: 5em;
+	}
+	.contact p {
+		font-size: 3em;
+	}
 }
-
-
-/*ID'S'*/
-
-#portfolio {
-	margin-top: 200px;
-}
-
-#psc {
-	margin-bottom: 100px;
-	padding-bottom: 0px;
-}
-
-.marge a.unFcc::before {
-	content: "";
-}
-
-
-/*
-#main {
-	background-color: var(--color3);
-	background: linear-gradient(to bottom, var(--color3), var(--color3)60%, var(--color2))
-}*/
