@@ -8,6 +8,8 @@ body {
 	color: black;
 	background-color: lightgray;
 	width: 100%;
+	padding 70px;
+	font-family: Gentium book basic;
 }
 
 a {
@@ -25,15 +27,20 @@ a:hover {
 
 /*fixme [] on mobile, sections rise up behind nav bar */
 
+
+/*
 #navbar {
 	background-color: rgba(62, 85, 106, 1);
 	position: fixed;
 	width: 100%;
 	top: 0px;
-	/*	border-bottom: 4px solid #4B8F9F;*/
+	border-bottom: 4px solid #4B8F9F;
 	z-index: 99;
 }
+*/
 
+
+/*
 nav ul {
 	display: flex;
 	flex-direction: column;
@@ -46,11 +53,20 @@ nav li {
 
 .navElement {
 	font-size: 1em;
-	/*	margin-bottom: .5rem;*/
+		margin-bottom: .5rem;
 }
 
 nav li:first-child {
 	font-size: 2em;
+}
+*/
+
+.navbar-brand {
+	font-size: 3rem;
+}
+
+.navbar-collapse a {
+	font-size: 2rem;
 }
 
 
@@ -115,6 +131,8 @@ nav li:first-child {
 .projects {
 	padding-top: 150px;
 	width: 100%;
+	/*	height: auto;*/
+	display: block;
 }
 
 .projects h1 {
@@ -123,35 +141,27 @@ nav li:first-child {
 	margin-bottom: 50px;
 }
 
-.project {
-	/* project container */
-	column-count: 1;
-	column-rule: solid 2px darkgray;
-	column-gap: 0em;
-	text-align: center;
+
+/* .thumbnail h4 {
+	padding-left: 25px;
+} */
+
+.thumbnail img {
+	width: 100%;
+	border: 1px solid black;
 }
 
-.project-tile {
-	/* project child elements */
-	position: relative;
-	background-color: #000;
-	display: inline-block;
-	margin-bottom: 50px;
-	margin-bottom: 50px;
-	height: 240px;
-	border-radius: 10px;
-	border: 2px solid black;
+
+/*
+.thumbnail {
+	opacity: .5;
+	transition: opacity .2 ease-in-out;
 }
 
-.project-tile img {
-	border-radius: 10px;
+.thumbnail:hover {
+	opacity: 1;
 }
-
-.projectDescription {
-	line-height: 1.5em;
-	font-size: 1em;
-	font-weight: bold;
-}
+*/
 
 
 /*__________________-contact section____________________________*/
@@ -197,6 +207,7 @@ nav li:first-child {
 /*________________________tablet styles____________________*/
 
 @media only screen and (min-width: 700px) {
+	/*
 	#navbar {
 		background-color: rgba(62, 85, 106, 0.5);
 	}
@@ -218,6 +229,7 @@ nav li:first-child {
 	nav li:first-child {
 		font-size: 3em;
 	}
+*/
 	.welcome h1 {
 		font-size: 6em;
 		left: 100px;
@@ -240,27 +252,47 @@ nav li:first-child {
 /*______________________desktop styles__________________*/
 
 @media only screen and (min-width: 1025px) {
+	/*
 	#navbar {
 		background-color: rgba(62, 85, 106, 0.5);
 	}
+	*/
+	/*
+	.navbar-brand {
+		font-size: 3rem;
+	}
+	
+	.navbar-collapse a {
+		font-size: 2rem;
+		border-left: 1px solid gray;
+		border-right: 1px solid gray;
+	}
+*/
+	/*
+	
 	nav ul {
 		display: flex;
 		flex-direction: row;
 		align-items: baseline;
 	}
+	
 	nav li:nth-child(1) {
 		margin-right: auto;
 	}
+	
 	.navElement {
 		font-size: 2em;
 		margin-left: 50px;
 	}
+	
 	.navElement:last-child {
 		margin-right: 50px;
 	}
+	
 	nav li:first-child {
 		font-size: 5em;
 	}
+*/
 	.welcome {
 		/* note keep this height for FCC tests */
 		height: 100vh;

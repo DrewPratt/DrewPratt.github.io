@@ -6,13 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" href="css/reset.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<!--	<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
 	<link type='text/css' href='css/style.css' rel='stylesheet'>
 	<!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script> -->
 	<!--note FFC nav test (#7) wont pass with scroller.js active-->
 </head>
 
 <body id="main">
+	<!--
 	<nav id="navbar">
 		<ul>
 			<li class="navElement">Drew Pratt</li>
@@ -21,6 +23,34 @@
 			<li class="navElement"><a href="#projects">Projects</a></li>
 			<li class="navElement"><a href="#contact">Contact</a></li>
 		</ul>
+	</nav> -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#welcome-section">Drew Pratt</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#welcome-section">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#projects">Projects </a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
 	</nav>
 	<main>
 		<section class="welcome" id="welcome-section">
@@ -36,41 +66,43 @@
 		</section>
 		<section class="projects" id="projects">
 			<h1>Projects:</h1>
-			<div class="project">
-				<div class="project-tile">
-					<a href="https://drewpratt.github.io/Projects/PSC/"><img src="img/PscSmallest.png" alt="" height="" width="">
-						<p class="projectDescription">Playback Speed Calculator</p>
-					</a>
-				</div>
-				<div class="project-tile">
-					<a href="https://drewpratt.github.io/Projects/FCC/personal-portfolio-page/"><img src="img/PortfolioSmallest.png" alt="" height="" width="">
-						<p class="projectDescription">FCC personal portfolio</p>
-					</a>
-				</div>
-				<div class="project-tile">
-					<a href="https://drewpratt.github.io/Projects/FCC/tribute-page/"><img src="img/TributeSmallest.png" alt="" height="" width="">
-						<p class="projectDescription">FCC Tribute page</p>
-					</a>
-				</div>
-				<div class="project-tile">
-					<a href="https://drewpratt.github.io/Projects/BKB/"><img src="img/BkbSmallest.png" alt="" height="" width="">
-						<p class="projectDescription">Box Knife Betty band page</p>
-					</a>
-				</div>
-				<div class="project-tile">
-					<a href="https://drewpratt.github.io/Projects/FCC/weather-app/"><img src="img/WeatherSmallest.png" alt="" height="" width="">
-						<p class="projectDescription"> FCC Weather App</p>
-					</a>
-				</div>
-				<div class="project-tile">
-					<a href="https://drewpratt.github.io/Projects/FCC/Wikipedia-viewer/"><img src="img/wikiSmallest.png" alt="" height="" width="">
-						<p class="projectDescription">FCC Wikipedia viewer</p>
-					</a>
-				</div>
-				<div class="project-tile">
-					<a href="https://drewpratt.github.io/Projects/FCC/random-quote-machine/"><img src="img/RqmSmallest.png" alt="" height="" width="">
-						<p class="projectDescription"> FCC Random Quote Machine</p>
-					</a>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-sm-6">
+						<a class="thumbnail" href="https://drewpratt.github.io/Projects/PSC/"><img src="img/PscSmallest.png">
+							<h4 class="caption">Playback Speed Calculator</h4>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<a class="thumbnail" href="https://drewpratt.github.io/Projects/FCC/personal-portfolio-page/"><img src="img/PortfolioSmallest.png">
+							<h4 class="caption">FCC personal portfolio</h4>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<a class="thumbnail" href="https://drewpratt.github.io/Projects/FCC/tribute-page/"><img src="img/TributeSmallest.png">
+							<h4 class="caption">FCC Tribute page</h4>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<a class="thumbnail" href="https://drewpratt.github.io/Projects/BKB/"><img src="img/BkbSmallest.png">
+							<h4 class="caption">Box Knife Betty band page</h4>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<a class="thumbnail" href="https://drewpratt.github.io/Projects/FCC/weather-app/"><img src="img/WeatherSmallest.png">
+							<h4 class="caption"> FCC Weather App</h4>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<a class="thumbnail" href="https://drewpratt.github.io/Projects/FCC/Wikipedia-viewer/"><img src="img/wikiSmallest.png">
+							<h4 class="caption">FCC Wikipedia viewer</h4>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<a class="thumbnail" href="https://drewpratt.github.io/Projects/FCC/random-quote-machine/"><img src="img/RQMSmallestUpdated.png">
+							<h4 class="caption"> FCC Random Quote Machine</h4>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -83,7 +115,8 @@
 			</div>
 		</section>
 	</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/scroller.js"></script>
 </body>
 
